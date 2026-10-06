@@ -6,12 +6,15 @@
   const submit = form.querySelector('[type="submit"]');
   const reveal = document.getElementById("revealAnswers");
   const explanations = [
-    "Localization estimates where the user is and which direction they face.",
-    "A mapped QR control point provides a known reference that can anchor the position estimate.",
-    "Visual place recognition (VPR) retrieves reference images that look similar to the current camera image.",
-    "Dijkstra's algorithm finds a lowest-cost route through the mapped navigation graph.",
-    "The UNav study reported improvements under its tested conditions; those findings do not establish perfect navigation in every building."
-  ];
+    "Satellite positioning is unreliable inside buildings, so vision, inertial or radio sensing must estimate where the user is.",
+    "Four 2D image corners paired with four surveyed 3D corners give the 2D–3D correspondences that P3P/PnP needs.",
+    "PDR predicts motion step by step; whenever a QR code is seen, the Kalman update pulls the estimate back toward the accurate fix.",
+    "UNav is coarse-to-fine: a global NetVLAD descriptor shortlists K candidates, and SuperGlue matches local SuperPoint features to verify them and weight the position estimate.",
+    "P = Σ ωⱼPⱼ with ωⱼ proportional to the match count mⱼ; weak candidates are excluded, with fallbacks at more than 30 matches.",
+    "A→C (2) + C→D (3) + D→E (2) = 7, which beats A→B→D→E = 4 + 2 + 2 = 8.",
+    "Gait speed (0.75 vs 0.80 m/s, p = 0.121) showed no significant difference; seven of the other metrics improved significantly.",
+    "Marker-free VPR avoids installed infrastructure, but its guidance depends on connectivity (3.62 s average round trip) and on a reference map that matches the current building."
+];
   let submitted = false;
   let revealed = false;
   let scoreSummary = "";

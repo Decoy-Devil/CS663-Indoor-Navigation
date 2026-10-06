@@ -28,3 +28,13 @@
 3. Researcher outreach: send the drafted email, then add any genuine reply to the Challenges/Future pages (placeholders are still there).
 4. Final human proofread on the deployed site.
 5. Update the PowerPoint from the final site and record the Unlisted YouTube presentation.
+
+## V4 rubric pass (grading rubric review)
+- Applications: five detailed scenarios (hospitals, campuses, airports/stations/malls, robots/warehouses, BLV independent travel), each with evidence and fit.
+- Comparison with other research: table of radio positioning, commercial beacon/marker apps, visual/LiDAR SLAM and pure inertial navigation, drawn from [3] and [5].
+- Operating conditions and assumptions: one box per system on the Localization & Navigation page.
+- Limitations → practical impact: an 8-row table on the Challenges page.
+- Bibliography: citations now first appear in order [1]→[5]; full author lists.
+- Outreach placeholders removed from the public pages.
+- Quiz: 8 questions with plausible distractors, answers spread across a–d.
+- Grammar/spelling pass; US spelling standardized.
