@@ -24,3 +24,8 @@ Topic: Mobile — previous work on indoor navigation using vision, with the goal
 
 ## Finalization item intentionally pending
 Researcher/professor/student outreach is reserved for the finalization phase per our project plan. Add the actual response or transparent outreach status to Challenges/Future before final submission.
+
+## Verified additions (V3)
+- QR [3]: node record = ID, corner geodetic coordinates, floor, type, adjacent edges, reachable nodes, position offset; edge = ID, start/end, length, width, centerline. ZBar → 4 corners → P3P (+4th point check) → ICP → R_w2c,T_w2c; IMU pose via R_c2b,T_c2b. Weinberg step model S = k·(amax−amin)^(1/4). EKF state [x,y,θ]. Corridor constraint d > w/2 → project onto centerline. Decode test: 1 m 0.15/0.08 m, 1°/4°; 2 m 0.25/0.21 m, 2°/4°; 3 m failed. Fusion test: 31 states, 6 QR codes on pillars. CC BY 4.0.
+- UNav 2022 [4]: Insta360; 4,258 frames × 18 slices (640×360, 75° FOV) = 76,644 images; OpenVSLAM + COLMAP/SuperPoint; T = xXᵀ(XXᵀ)⁻¹; NetVLAD squared Euclidean; weights m_j/Σm (m≤75 → 0; fallback best >30; else increase K); PnP; <1 m, ≈2° at 17 points (NYU Langone ACC); 2–3 s at K=20; ~40 min capture + ~15 min map build; Android app + Jetson AGX Xavier backpack; offline mode. CC BY 4.0.
+- UNav 2024 [5]: 12 blind + 8 low vision, 38.3±8.4 y, 9 F; Mahidol Salaya; 7 buildings ≈92,900 m²; 24 routes (20 indoor, 4 outdoor), 50–200 m, 2–4 turns; crossover, counterbalanced; Wilcoxon; Jetson Orin backpack, 16 MP chest camera, bone-conduction headset; DGX A100 server; RTT 3.62 s (0.24–5.96); ≈7 users/GPU; blind subgroup benefited more (time 44.4 vs 12.4 s, p=.047; path eff. 0.292 vs 0.106, p=.044); ordering effect on time (p=.043). PMC copy = author manuscript (figures linked, not reused).

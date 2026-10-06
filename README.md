@@ -4,7 +4,7 @@ Open `index.html` locally to preview. The site is static HTML/CSS/JavaScript and
 
 ## Structure
 - 7 linked HTML pages
-- 6 original diagrams
+- 21 numbered figures (10 original diagrams/charts + 11 reproduced CC BY 4.0 research figures)
 - audio narration on every page
 - 5-question JavaScript quiz
 - annotated bibliography with 5 references
@@ -19,3 +19,7 @@ Open `index.html` locally to preview. The site is static HTML/CSS/JavaScript and
 
 ## Research-rich revision
 Added technical CV implementation details, research-figure links with attribution, recreated result charts from published means, stronger sensor/video comparisons, applications, and researcher/lab context.
+
+
+## V3 research pass
+Verified all quantitative claims against the primary papers; added reproduced research figures with full licence captions; added QR experimental results, UNav accuracy/latency/hardware, full metric table with statistics, EKF/PDR/PnP deep dives, a Dijkstra worked trace and runnable Python, and a decision table. Fixed a broken SVG. See RUBRIC_AUDIT.md for the remaining user actions.
