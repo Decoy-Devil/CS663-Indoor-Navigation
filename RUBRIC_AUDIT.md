@@ -4,7 +4,7 @@
 | Category (pts) | Status | Evidence |
 |---|---|---|
 | Format / ease of use (5) | Met | 7 static pages, consistent tab nav, responsive (tested at 1280 px and 375 px, no horizontal scroll), no console errors except favicon 404. |
-| Mixed media (5) | Met, with one audio action | 21 numbered figures: 10 original diagrams/charts + 11 reproduced CC BY 4.0 research figures (QR paper [3]: Figs 1, 2, 4, 5, 6; UNav 2022 [4]: Figs 1, 4, 6, 7, 8, 9). Audio narration on every page. **The `audio/` folder must be pushed; it was missing from GitHub.** |
+| Mixed media (5) | Met, with one audio action | 21 numbered figures: 10 original diagrams/charts + 11 reproduced CC BY 4.0 research figures (QR paper [3]: Figs 1, 2, 4, 5, 6; UNav 2022 [4]: Figs 1, 4, 6, 7, 8, 9). Audio narration (MP3 summary) on every page, now deployed. |
 | Organization (5) | Met | Intro with "how to use" note → sensors → technical core → evidence → challenges → future + quiz → bibliography. |
 | Originality (10) | Met | Prose original; research facts cited; our inferences explicitly labelled "our interpretation/observation". One short quoted phrase from [3]. |
 | Length (10) | Met | Core reading ≈ 6,150 words ≈ 25–30 min; optional deep-dive panels add ≈ 8 min. |
@@ -24,7 +24,7 @@
 
 ## Still pending (user)
 1. Push all files to GitHub, **including `audio/`**. Do not push `_sources/` if you create it.
-2. Re-record narration in your own voice if required. The current WAVs are ~25 s synthetic summaries written for the old content.
+2. Narration: new ~26–33 s page summaries (MP3) generated with the open-source Kokoro neural TTS model (voice af_heart). Re-record in your own voice only if the instructor requires the author's voice.
 3. Researcher outreach: send the drafted email, then add any genuine reply to the Challenges/Future pages (placeholders are still there).
 4. Final human proofread on the deployed site.
 5. Update the PowerPoint from the final site and record the Unlisted YouTube presentation.

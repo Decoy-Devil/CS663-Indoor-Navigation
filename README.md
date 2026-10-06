@@ -23,3 +23,7 @@ Added technical CV implementation details, research-figure links with attributio
 
 ## V3 research pass
 Verified all quantitative claims against the primary papers; added reproduced research figures with full licence captions; added QR experimental results, UNav accuracy/latency/hardware, full metric table with statistics, EKF/PDR/PnP deep dives, a Dijkstra worked trace and runnable Python, and a decision table. Fixed a broken SVG. See RUBRIC_AUDIT.md for the remaining user actions.
+
+## Theme and narration
+- Sunrise/sunset button (bottom-right) toggles light/dark reading themes (`js/theme.js`); the choice is remembered per browser.
+- `audio/*.mp3`: one short spoken summary per page, generated with Kokoro (open-source neural TTS).
