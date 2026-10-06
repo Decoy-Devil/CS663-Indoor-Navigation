@@ -19,6 +19,7 @@
     btn.addEventListener("click", () => {
       const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
       root.setAttribute("data-theme", next);
+      btn.classList.remove("just-toggled"); void btn.offsetWidth; btn.classList.add("just-toggled");
       try { localStorage.setItem("reading-theme", next); } catch (e) {}
       paint();
     });
