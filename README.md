@@ -15,3 +15,7 @@ Open `index.html` locally to preview. The site is static HTML/CSS/JavaScript and
 2. Replace synthetic narration audio with your own recordings if your instructor expects the author's voice specifically.
 3. Proofread names/course metadata and test all links after GitHub Pages deployment.
 4. Record the separate required YouTube presentation using the PowerPoint and GitHub Pages tutorial.
+
+
+## Research-rich revision
+Added technical CV implementation details, research-figure links with attribution, recreated result charts from published means, stronger sensor/video comparisons, applications, and researcher/lab context.
