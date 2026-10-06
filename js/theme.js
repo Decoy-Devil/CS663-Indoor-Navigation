@@ -7,14 +7,15 @@
   root.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
 
   const label = () => root.getAttribute("data-theme") === "dark"
-    ? { icon: "🌅", text: "Switch to light (sunrise) reading theme" }
-    : { icon: "🌇", text: "Switch to dark (sunset) reading theme" };
+    ? { text: "Switch to light theme (sunrise)" }
+    : { text: "Switch to dark theme (eclipse)" };
 
   document.addEventListener("DOMContentLoaded", () => {
     const btn = document.createElement("button");
     btn.type = "button";
     btn.className = "theme-toggle";
-    const paint = () => { const l = label(); btn.textContent = l.icon; btn.title = l.text; btn.setAttribute("aria-label", l.text); };
+    btn.innerHTML = '<span class="sun" aria-hidden="true"></span><span class="moon" aria-hidden="true"></span>';
+    const paint = () => { const l = label(); btn.title = l.text; btn.setAttribute("aria-label", l.text); };
     btn.addEventListener("click", () => {
       const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
       root.setAttribute("data-theme", next);
