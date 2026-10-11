@@ -90,3 +90,6 @@ html[data-theme="dark"] .group-warm{background:#1a1916;border-color:#332c20}
 html[data-theme="dark"] .group figure,html[data-theme="dark"] .group .card,html[data-theme="dark"] .group table{background:#172131}
 @media(max-width:720px){.group{padding:.4rem 1rem 1.2rem;margin-left:-.25rem;margin-right:-.25rem}}
 @media(max-width:720px){main>.audio-box{top:auto;bottom:1rem;left:.65rem;right:auto;width:min(62vw,240px)}}
+
+/* merged group label + heading on one line */
+.group h2 .group-tag{color:var(--accent)}.group-warm h2 .group-tag{color:var(--warm)}.group h2 .group-sep{color:var(--muted);font-weight:400}
